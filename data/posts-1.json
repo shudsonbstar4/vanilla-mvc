@@ -1,0 +1,22 @@
+{
+	"id": "1", 
+	"title": "First post",
+	"dateCreated": "2015-11-10", 
+	"tags": [{
+			"id": "1",
+			"title": "General"
+		}],
+	"blog": {
+		"id": "11",
+		"title": "Sarah's blog",
+		"user": {
+			"id": "11",
+			"firstName": "Sarah",
+			"lastName": "Hudson",
+			"userName": "shudson",
+			"password": "****",
+			"emailAddress": "shudson@cardinalsolutions.com"
+		}
+	},
+	"postContent": "<h4>Hello, world!! :)</h4>"
+}

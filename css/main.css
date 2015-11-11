@@ -1,0 +1,67 @@
+/* Styles go here */
+
+/*Reset CSS */
+html, body {
+  padding:0;
+  margin:10px;
+  font-family:Arial, Tahoma, sans-serif;
+  font-size:12px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border:1px solid gray;
+}
+
+thead {
+  text-align:left;
+}
+
+thead > tr {
+  border-bottom:1px solid gray;
+}
+
+tr {
+  border-bottom:1px solid gray;
+}
+
+tbody > tr:nth-child(even), tbody > tr:nth-child(odd):hover{
+  background-color:lightgray;
+}
+
+tbody > tr:nth-child(even):hover{
+  background-color:gray;
+}
+
+td, th {
+  padding:7px 10px 7px 0px;
+}
+
+button {
+  padding:5px;
+  font-size:12px;
+}
+
+button:hover{
+  cursor:pointer;
+}
+
+button:nth-child(odd){
+  background:linear-gradient(#f1f1f2, #e1e1e2);
+  border:1px solid #c1c1c2;
+  color:#1a1a1a;
+  text-shadow:1px 1px 1px rgba(100,100,100,0.3);
+}
+
+button:nth-child(even){
+  background:linear-gradient(#d32f2f, #b71c1c);
+  border:1px solid maroon;
+  color: #fff;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.info-msg {
+  background-color:aliceblue;
+  color:#1a1a1a;
+}

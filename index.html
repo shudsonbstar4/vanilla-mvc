@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+		<div id="content"></div>
+
+		<script type="text/javascript" src="js/util.js"></script>
+		<script type="text/javascript" src="js/ctrl/initialize.js"></script>
+		<script type="text/javascript" src="/js/routes.js"></script>
+		<script type="text/javascript" src="js/model/Post.js"></script>
+		<script type="text/javascript" src="js/view/listPosts.js"></script>
+		<script type="text/javascript" src="js/view/viewPost.js"></script>
+		<script>
+			var addListener;
+
+			if(window.addEventListener){
+				addListener = window.addEventListener;
+			} else if(window.attachEvent) {
+				addListener = window.attachEvent;
+			};
+
+			addListener("load", blog.view.loadRoutes.loadPartial('home'));
+			addListener("load", blog.view.listPosts.setupUI);
+		</script>
+
+	</body>
+</html>
